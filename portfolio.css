@@ -11,10 +11,11 @@ body{
 }
 
 header{
-    position: fixed;
-    top: 0; left: 0; 
+    position: sticky;
+    top: 0; 
+    left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20px 10%; 
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -28,35 +29,37 @@ header{
     text-decoration: none;
     font-weight: 600;
     cursor:default;
+    animation: slideright 1s ease forwards ;
 }
 
 .header a{
     font-size: 17px;
-    color: rgb(255, 164, 44);
+    color: antiquewhite;
     text-decoration: none;
     font-weight: 600;
     cursor:pointer;
     padding: 0.5em;
+    animation: slideleft 1s ease forwards;
 }
 
 .header a:hover{
     font-size: 17px;
-    color: rgb(255, 164, 44);
-    text-decoration: underline;
+    color: rgb(0, 191, 191);
     transition: 0.5s;
     font-weight: 600;
     cursor:pointer;
     padding: 0.5em;
+    transition: 0.5s;
 }
 
 .home{
     position: relative;
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 70px 10% 0;
+    animation: slideup 1s ease forwards;
 }
 
 img{
@@ -75,6 +78,7 @@ img{
 
 .home-content{
     width: 40vw;
+    animation: slideup 1s ease forwards;
 }
 
 .home-content h3{
@@ -93,38 +97,70 @@ img{
     margin: -3px 0;
 }
 
-.social-media a{
-    padding: 0.3em;
-    margin: 15px;
-    margin-left: 0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: beige;  
+#btn{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px;
+    color: aqua;
+    padding: 1.5em;
+    cursor: pointer;
     background: transparent;
     border: 2px solid aqua;
-    border: 2 px solid aqua; 
-    border-radius: 50%;
-    color: aqua;
-    text-decoration: none;
 }
 
-.home-content .btn{
+#btn:hover{
+    font-size: 14px;
+    margin-top: 10px;
     font-weight: 600;
     text-decoration: none;
-    border: 2px solid antiquewhite;
     border-radius: 20px;
-    color: rgb(255, 255, 255);
-    padding: 0.8em;
-}
-
-.home-content .btn:hover{
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    border-radius: 20px;
-    color: rgb(0, 0, 0);
-    background-color: aqua;
+    color: #1f242d;
+    padding: 1.5em;
+    cursor: pointer;
+    background:aqua;
     transition: 0.5s;
-    padding: 0.8em;
+}
+
+@keyframes slideright{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideright{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideleft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideup{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

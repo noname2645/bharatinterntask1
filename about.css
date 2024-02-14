@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #1f242d;
+    color: antiquewhite;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; 
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;  
+}
+
+.logo{
+    font-size: 25px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 600;
+    cursor:default;
+    animation: slideright 1s ease forwards ;
+}
+
+.header a{
+    font-size: 17px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 600;
+    cursor:pointer;
+    padding: 0.5em;
+    animation: slideleft 1s ease forwards;
+}
+
+.about{
+    width: 100%;
+}
+.header a:hover{
+    font-size: 17px;
+    color: aqua;
+    transition: 0.5s;
+    font-weight: 600;
+    cursor:pointer;
+    padding: 0.5em;
+    transition: 0.5s;
+}
+
+ #tenth{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    /* padding: 1em; */
+    animation: slideright 1s ease forwards;
+    animation-delay: 0.28s;
+    background-color: rgb(30, 0, 255);
+
+}
+
+#tenth span{
+    color: aqua;
+}
+
+.twelvethcontainer{
+    display: flex;
+    justify-content: end;
+}
+
+ #twelveth{
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    margin-top: 10vh;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 0.28s;
+    background-color: red;
+    width: fit-content;
+}
+
+#be{
+    display: flex;
+    margin-top: 10vh;
+    margin-right: 0;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 0.28s;
+    background-color: greenyellow;
+    width: fit-content;
+}
+
+@keyframes slideright{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideleft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
