@@ -26,7 +26,6 @@ header{
     text-decoration: none;
     font-weight: 600;
     cursor:default;
-    animation: slideright 1s ease forwards ;
 }
 
 .header a{
@@ -53,19 +52,30 @@ header{
 }
 
  #tenth{
-    margin-top: 20vh;
+    margin-top: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
     width: fit-content;
-    /* padding: 1em; */
     animation: slideright 1s ease forwards;
     animation-delay: 0.28s;
-    background-color: rgb(30, 0, 255);
-
+    background-color: rgb(0, 4, 255);
+    border-radius: 20px;
+    padding: 1em;
+    margin-left: 1em;
+    font-size:25px;
+    
 }
 
 #tenth span{
+    color: aqua;
+}
+
+#twelveth span{
+    color: aqua;
+}
+
+#be span{
     color: aqua;
 }
 
@@ -75,24 +85,31 @@ header{
 }
 
  #twelveth{
+    padding: 1em;
     display: flex;
     justify-content: end;
     align-items:center;
     margin-top: 10vh;
+    margin-right: 1em;
+    border-radius: 20px;
     animation: slideleft 1s ease forwards;
     animation-delay: 0.28s;
-    background-color: red;
+    background-color: rgb(242, 0, 255);
     width: fit-content;
+    font-size:25px;
 }
 
 #be{
     display: flex;
     margin-top: 10vh;
-    margin-right: 0;
     animation: slideleft 1s ease forwards;
     animation-delay: 0.28s;
-    background-color: greenyellow;
+    background-color: rgb(200, 0, 0);
     width: fit-content;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 1em;
+    margin-left: 1em;
 }
 
 @keyframes slideright{

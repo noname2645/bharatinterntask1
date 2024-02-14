@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animated portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
     </script>
-</head>
-<body>
-    <header>
-        <a href="#" class="logo">portfolio.</a>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">portfolio.</a>
 
-        <nav class="header">
-            <a href="#" onclick="showportfoliopage()">Home</a>
-            <a href="#" onclick="showaboutpage()">About</a>
-            <a href="#" onclick="showcontactpage()">Contact</a>
-            <a href="#" onclick="showaccompage()">Accomplishments</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello, My name is</h3>
-            <h1>Rohit Karmokar</h1>
-            <h3>And I am <span class="mytext"></span></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga magnam consequatur tenetur minus asperiores incidunt doloremque blanditiis ut deserunt, consequuntur quisquam facere quo eligendi dignissimos eum rem, voluptates nobis iure!</p>
-            <button id="btn">Download CV</button>
-        </div>
+            <nav class="header">
+                <a href="#" onclick="showportfoliopage()">Home</a>
+                <a href="#" onclick="showaboutpage()">About</a>
+                <a href="#" onclick="showcontactpage()">Contact</a>
+                <a href="#" onclick="showaccompage()">Accomplishments</a>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="home-content">
+                <h3>Hello, My name is</h3>
+                <h1>Rohit Karmokar</h1>
+                <h3>And I am <span class="mytext"></span></h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga magnam consequatur tenetur minus asperiores incidunt
+                    doloremque blanditiis ut deserunt, consequuntur quisquam
+                    facere quo eligendi dignissimos eum rem, voluptates nobis
+                    iure!</p>
+                <button id="btn">Download CV</button>
+            </div>
             <div class="home-img">
                 <img src="image2.jpg" alt="failed to load">
             </div>
-    </section>
-    <style>
+        </section>
+        <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
       </style>
-      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-      <script src="script.js"></script>
-      <script>
+        <script src="script.js"></script>
+        <script>
         function showportfoliopage(){
             window.location.href = "portfolio.html"
         }
@@ -50,7 +53,6 @@
             window.location.href = "accomp.html"
         }
       </script>
-     
-      
-</body>
+
+    </body>
 </html>

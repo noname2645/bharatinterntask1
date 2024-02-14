@@ -6,14 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
         backDelay: 1000,
         loop: true
     });
-
-    var typed2 = new Typed(".about", {
-        strings: ["10th in 2020", "12th in 2022"],
-        typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 1000,
-        loop: true
-    });
 });
 
 function showportfoliopage() {
@@ -21,9 +13,7 @@ function showportfoliopage() {
 }
 
 function showaboutpage() {
-    // If you are already on the "about" page, you might not want to redirect to the same page.
-    // You can add some additional logic here based on your requirements.
-    console.log("Already on the About page");
+    window.location.href = "about.html";
 }
 
 function showcontactpage() {
@@ -32,4 +22,12 @@ function showcontactpage() {
 
 function showaccomppage() {
     window.location.href = "accomp.html";
+}
+
+function github() {
+    window.open("https://github.com/noname2645", '_blank', 'noopener noreferrer');
+}
+
+function linkedin() {
+    window.open("https://www.linkedin.com/in/rohit-karmokar-654788257/", '_blank', 'noopener noreferrer');
 }
