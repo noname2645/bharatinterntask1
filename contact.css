@@ -1,105 +1,116 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    background: #1f242d;
-    color: antiquewhite;
+body {
+  background: #1f242d;
+  color: antiquewhite;
 }
 
-header{
-    position: fixed;
-    top: 0; 
-    left: 0; 
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;  
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
-.logo{
-    font-size: 25px;
-    color: antiquewhite;
-    text-decoration: none;
-    font-weight: 600;
-    cursor:default;
+.logo {
+  font-size: 25px;
+  color: antiquewhite;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
 }
 
-.header a{
-    font-size: 17px;
-    color: antiquewhite;
-    text-decoration: none;
-    font-weight: 600;
-    cursor:pointer;
-    padding: 0.5em;
-    animation: slideleft 1s ease forwards;
+.header a {
+  font-size: 17px;
+  color: antiquewhite;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5em;
+  animation: slideleft 1s ease forwards;
 }
 
-.header a:hover{
-    font-size: 17px;
-    color: aqua;
-    transition: 0.5s;
-    font-weight: 600;
-    cursor:pointer;
-    padding: 0.5em;
-    transition: 0.5s;
+.header a:hover {
+  font-size: 17px;
+  color: aqua;
+  transition: 0.5s;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5em;
+  transition: 0.5s;
 }
 
-.c{
-    margin: 4em;
+.c {
+  margin: 4em;
 }
 
-.contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15%;
-    width: 100%;
-    animation: slideright 1s ease forwards;
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  width: 100%;
+  animation: slideright 1s ease forwards;
 }
 
-.contact ion-icon{
-    font-size: 90px;
-    display:flex;
-    justify-content:space-between;
-    cursor: pointer;
-    color:blue;
+.contact ion-icon {
+  font-size: 90px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: blue;
+  border-radius: 20px;
 }
 
-.contact .git{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: fit-content;
+.contact ion-icon:hover {
+  font-size: 90px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: blue;
+  background-color: #1f242d;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px 10px #0ff;
+  transition: 0.2s;
 }
 
-.contact .lin{
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
-
- .contact .ins{
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
-
-@keyframes slideright{
-    0%{
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
+.contact .git {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
 }
 
+.contact .lin {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.contact .ins {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1f242d;
+  color: antiquewhite;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: antiquewhite;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+
+.header a {
+  font-size: 17px;
+  color: antiquewhite;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5em;
+  animation: slideleft 1s ease forwards;
+}
+
+.header a:hover {
+  font-size: 17px;
+  color: aqua;
+  transition: 0.5s;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5em;
+  transition: 0.5s;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container1 p {
+  border: 2px solid white;
+  padding: 1em;
+  font-size: 2em;
+  margin-top: 25vh;
+  cursor: pointer;
+  border-radius: 30px;
+  animation: slideright 1s ease forwards;
+}
+
+.container1 p:hover {
+  background-color: #1f242d;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px 10px #0ff;
+  transition: 0.2s;
+}
+
+.container2 p {
+  border: 2px solid white;
+  padding: 1em;
+  font-size: 2em;
+  cursor: pointer;
+  margin-top: 0;
+  border-radius: 30px;
+  animation: slideright 2s ease forwards;
+}
+
+.container2 p:hover {
+    background-color: #1f242d;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px 10px #0ff;
+    transition: 0.2s;
+}
+
+.container3 p {
+  border: 2px solid white;
+  padding: 1em;
+  font-size: 2em;
+  cursor: pointer;
+  margin-top: 0;
+  border-radius: 30px;
+  animation: slideright 2.5s ease forwards;
+}
+
+.container3 p:hover{
+    background-color: #1f242d;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px 10px #0ff;
+    transition: 0.2s;
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
